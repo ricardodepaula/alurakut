@@ -14,9 +14,9 @@ export default async function recebedorDeRequests(request, response) {
         const registroCriado = await client.items.create({
             itemType: "967698", // ID do Model de "Communities" criado pelo Dato
             ...request.body,
-            title: "Comunidade de Teste II via API",
-            imageUrl: "https://github.com/ricardodepaula.png",
-            creatorslug: "ricardodepaula"
+            //title: "Comunidade de Teste II via API",
+            //imageUrl: "https://github.com/ricardodepaula.png",
+            //creatorslug: "ricardodepaula"
         })
 
         console.log(registroCriado);
