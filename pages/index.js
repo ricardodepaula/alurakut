@@ -149,7 +149,7 @@ export default function Home() {
                 console.log(dados.registroCriado);
                 const comunidade = dados.registroCriado;
                 const comunidadesAtualizadas = [...comunidades, comunidade];
-                setComunidades(comunidadesAtualizadas)
+                setComunidades(comunidadesAtualizadas);
               })                
             }}>
               <div>
@@ -181,7 +181,7 @@ export default function Home() {
               Comunidades ({comunidades.length})
             </h2>
             <ul>
-              {comunidades.map((itemAtual) => {
+              {comunidades.slice(0,6).map((itemAtual) => {
                 return (
                   <li key={itemAtual.id}>
                       <a href={`/communities/${itemAtual.id}`}>
